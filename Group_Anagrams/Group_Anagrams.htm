@@ -1,0 +1,683 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Group_Anagrams.htm">
+<link rel=File-List href="Group_Anagrams_files/filelist.xml">
+</head>
+
+<body lang=en-US style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:16.7194in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0916in;width:2.5062in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt;color:#201F1E'><span
+style='font-weight:bold'>Group Anagrams</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0916in;width:2.5881in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Wednesday,
+August 17, 2022</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>1:35
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.9013in;margin-left:.3763in;width:5.725in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt'><img src="Group_Anagrams_files/image001.png" width=16
+ height=16 alt=Important>&nbsp;<span style='font-weight:bold;color:#FA0000'>Approach
+ # 1 (Not Best) - Hashmap with </span><span style='font-weight:bold;color:#538135'>Sorted
+ String</span><span style='font-weight:bold;color:#FA0000'> as Key</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.552in;margin-left:
+ 1.1in;width:14.1472in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.2in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4298in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0222in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.2in;
+  height:.0222in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4298in;
+  height:.0222in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.25in'><img src="Group_Anagrams_files/image002.png"
+  width=530 height=216
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/group-anagrams/&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.2277in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.2in;height:4.1333in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.1881in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#C63B15'><span style='mso-spacerun:yes'> </span></span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N * K * log K) </span></li>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>N</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the length of each strs</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>K</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the max len of a string in strs</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>The outer
+          loop has complexity </span><span style='font-weight:bold;font-family:
+          Calibri;font-size:12.0pt;color:#E84C22'>O(N)</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> as we
+          iterate through each string. Then, we sort each string in </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#E84C22'>O(K log K)</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> time.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.1881in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'><span
+          style='mso-spacerun:yes'> </span></span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#201F1E'>O(N * K)</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>We have to
+          store </span><span style='font-weight:bold;font-family:Calibri;
+          font-size:12.0pt;color:#7030A0'>N</span><span style='font-family:
+          Calibri;font-size:12.0pt;color:#E84C22'> strings of up to length </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>K</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt'>This is the total info
+          stored in the answer</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.1881in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Create a </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>hashmap</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> using
+          defaultdict(list), where each unique </span><span style='font-family:
+          Calibri;font-size:12.0pt;color:#7030A0'>key</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> is the </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>sorted
+          string (tuple)</span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#E84C22'>, and each </span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#538135'>value</span><span style='font-family:
+          Calibri;font-size:12.0pt;color:#E84C22'> is a </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#538135'>list of
+          original strings</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> each appended to it.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4298in;
+  height:2.2277in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.9048in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4298in;
+  height:1.9048in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1.9048in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.9243in;margin-left:1.2104in;width:6.0569in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+  margin-bottom:0in'>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Key</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> = the sorted
+      string is the unique key</span></li>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Value</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> = a list of
+      lists, of the original strings which are anagrams to each other</span></li>
+ </ul>
+</ul>
+
+</div>
+
+<div style='direction:ltr;margin-top:.2437in;margin-left:1.0444in;width:8.2375in'><img
+src="Group_Anagrams_files/image003.png" width=791 height=290
+alt="Untitled picture.png Machine generated alternative text:&#10;49. Group Anagrams &#10;Medium 11689 368 &#10;Add to List [C Share &#10;Given an array of strings strs , group the anagrams together. You can retum the answer in any order. &#10;An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly &#10;once. &#10;Example 1: &#10;[&quot;eat&quot; , &quot;tea&quot; , &quot;tan&quot; , &quot;ate&quot; , &quot;nat&quot; , &quot;bat&quot;] &#10;Input: strs = &#10;Output: &quot;eat&quot;, &quot;tea&quot;]] &#13;&#10;Ink Drawings&#13;&#10;"></div>
+
+<div style='direction:ltr;margin-top:.3888in;margin-left:.7402in;width:8.018in'><img
+src="Group_Anagrams_files/image004.png" width=765 height=447></div>
+
+<div style='direction:ltr;margin-top:.3541in;margin-left:.9895in;width:7.9354in'><img
+src="Group_Anagrams_files/image005.png" width=757 height=400></div>
+
+<div style='direction:ltr;margin-top:.9083in;margin-left:.5083in;width:16.2111in'><img
+src="Group_Anagrams_files/image006.png" width=1556 height=431
+alt="Untitled picture.png Machine generated alternative text:&#10;v ans: &#10;D 11 &#10;[&quot;eat&quot;, &quot;tea&quot; , &quot;tan&quot; &quot;ate&quot; , &quot;nat'l, &quot;bat&quot; &#10;special variables &#10;function variables &#10;class variables &#10;'list &gt; , &#10;tea', &#10;' nat' &#10;•e Group Anagrams - Sorted.py &gt; Solution &gt; groupAnagrams &#10;from collections import defaultdict &#10;class Solution: &#10;def groupAnagrams(se1f, strs: list[str]) list[list[str]]: &#10;['tan', &#10;['bat'] &#10;len(): &#10;s: 'bat' &#10;self: &lt; &#10;strs: [ •eat &#10;Globals &#10;maln &#10;. Solution object &#10;, •tea', &#10;•tan' , &#10;at &#10;# key is sorted version of the string &#10;# value is a list of anagrams &#10;ans = defaultdict(list) &#10;for s in strs: &#10;) ]. append(s) &#10;return ans. values() &#10;sorted string; &#10;Value: A list, due to defaultdict(list) to which each unsorted anagram is appended. &#10;# Key: &#10;# Return only the values, which will be a list, containing lists of strings where each elem have the same char count frequency &#10;strs = &#10;print(S01ution ( ) . groupAnagrams ( strs) ) &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;"></div>
+
+<div style='direction:ltr;margin-top:.0458in;margin-left:7.3875in;width:2.2652in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+  margin-bottom:0in'>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Tuple</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> as lists
+      cannot be keys in python.<span style='mso-spacerun:yes'>  </span></span><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Tuples</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> are
+      non-mutable (not-changeable).</span></li>
+ </ul>
+</ul>
+
+</div>
+
+<div style='direction:ltr;margin-top:1.0416in;margin-left:.0208in;width:16.5527in'><img
+src="Group_Anagrams_files/image007.png" width=1589 height=17></div>
+
+<div style='direction:ltr;margin-top:.4909in;margin-left:.4708in;width:7.6527in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt'><img src="Group_Anagrams_files/image001.png" width=16
+ height=16 alt=Important>&nbsp;<span style='font-weight:bold;color:#FA0000'>Approach
+ # 2 (Best) - Hashmap with </span><span style='font-weight:bold;color:#538135'>Char
+ Frequency Array</span><span style='font-weight:bold;color:#FA0000'> as Key
+ (Faster as No Sorting)</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.7229in;margin-left:
+ 1.1208in;width:14.9118in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.5423in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.852in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5166in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0597in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.5423in;
+  height:.0597in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.852in;
+  height:.0597in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.5187in'><img src="Group_Anagrams_files/image008.png"
+  width=530 height=242
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/contains-duplicate/&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.459in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.5423in;height:2.4951in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.4013in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.9777in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#C63B15'><span style='mso-spacerun:yes'> </span></span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O( N * K )</span></li>
+     </ul>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>N</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the length of each strs</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>K</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the max len of a string in strs</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.4861in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.893in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'><span
+          style='mso-spacerun:yes'> </span>O( </span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#201F1E'>N * K</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'> )</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>N</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the average length of each string </span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt'>This is the total info
+          stored in the answer</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.3888in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:7.0597in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Create a </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>hashmap</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> using
+          defaultdict(list), where each unique </span><span style='font-family:
+          Calibri;font-size:12.0pt;color:#7030A0'>key</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> is the </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>array of
+          char counts of each letter of the alphabet</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>, and each
+          </span><span style='font-family:Calibri;font-size:12.0pt;color:#538135'>value</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> is a </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#538135'>list of
+          original strings</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> each appended to it. </span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.852in;
+  height:2.459in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0354in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.852in;
+  height:.0354in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5166in;
+  height:.0354in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.5423in;margin-left:1.2937in;width:5.8159in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+  margin-bottom:0in'>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Key</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> = count of
+      each letter from a to z (26 counts)</span></li>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-weight:bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Value</span><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> = a list of
+      list of strings which have identical count frequency arrays</span></li>
+ </ul>
+</ul>
+
+</div>
+
+<div style='direction:ltr;margin-top:.5965in;margin-left:1.2159in;width:9.1881in'><img
+src="Group_Anagrams_files/image009.png" width=877 height=327></div>
+
+<div style='direction:ltr;margin-top:.4916in;margin-left:.5597in;width:15.6361in'><img
+src="Group_Anagrams_files/image010.png" width=1496 height=471></div>
+
+<div style='direction:ltr;margin-top:1.0666in;margin-left:1.4138in;width:4.6465in'><img
+src="Group_Anagrams_files/image011.png" width=441 height=57></div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.2909in;margin-left:
+ 1.4555in;width:13.8236in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2194in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.275in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:12.3284in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:1.2194in;height:.2923in'><img src="Group_Anagrams_files/image012.png"
+  width=113 height=24></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.275in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:12.3284in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1875in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.275in;
+  height:.1875in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:12.3284in;height:.4277in'><img src="Group_Anagrams_files/image013.png"
+  width=1184 height=41 alt="Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2395in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2194in;
+  height:.2395in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.275in;
+  height:.2395in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.218in;margin-left:7.9458in;width:5.934in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><span
+style='font-weight:bold;color:#FA0000'>LETTERS AFTER &quot;</span><span
+style='font-weight:bold;color:#7030A0'>a</span><span style='font-weight:bold;
+color:#FA0000'>&quot; ARE HIGHER IN # in Unicode SO THIS WORKS.<span
+style='mso-spacerun:yes'>   </span></span><span style='font-weight:bold;
+color:#7030A0'>a</span><span style='font-weight:bold;color:#FA0000'>=97,<span
+style='mso-spacerun:yes'>  </span></span><span style='font-weight:bold;
+color:#7030A0'>b</span><span style='font-weight:bold;color:#FA0000'>=98</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0409in;margin-left:1.3409in;width:15.0006in'><img
+src="Group_Anagrams_files/image014.png" width=1440 height=637
+alt="Untitled picture.png Machine generated alternative text:&#10;49 Group Anagrams &#10;Me ium 4675 217 Add to List Share &#10;Given an array of strings strs group he anagrams togethe . You can return the answer &#10;in any order. &#10;An Anagram is a word or phrase formed by rearranging the letters of a different word or &#10;phrase, typically using all the original letters exactly once. &#10;&quot;nat , &quot;bat&quot; &#10;Example I: &#10;ea&quot; &quot;tan&quot;, 'ate &#10;Input: strs - &#10;Output: [ [&quot;bat&quot;], [&quot;nat'l, &quot;tan&quot;] [&quot;ate&quot; , &quot;eat &#10;a&quot; &#13;&#10;Untitled picture.png Machine generated alternative text:&#10;class Solution: &#10;def groupAnagrams(se1f, &#10;strs: &#10;List[str]) &#10;List[List[str]]: &#10;res &#10;defaultdict(list) &#10;for s in strs: &#10;[8] * 26 z &#10;count &#10;for c in s: &#10;count[ord(c) - ord(&quot;a&quot;)] 1 &#10;res[tuple(count)] . append(s) &#10;return res. values() &#13;&#10;Ink Drawings&#13;&#10;Tuple as lists cannot be keys in python.  Tuples are non-mutable (not-changeable).&#13;&#10;Ink Drawings&#13;&#10;￼&#13;&#10;"></div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.1534in;margin-left:
+ 1.8875in;width:14.0375in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.284in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.5548in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:9.1986in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.0763in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.284in;
+  height:1.0763in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.5548in;
+  height:1.0763in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:9.1986in;height:3.125in'><img src="Group_Anagrams_files/image015.png"
+  width=883 height=300
+  alt="Untitled picture.png &#13;&#10;Untitled picture.png Machine generated alternative text:&#10;&quot;abbbbbbbbbbb&quot; &#10;11 &#10;&quot;aaaaaaaaaaab&quot; &#10;.00 0 &#10;&quot;111000...000000&quot; &#10;o &#10;o &#10;o &#10;o &#10;11 &#10;o &#10;o &#10;o &#10;.00 oo &#10;o &#10;o &#10;o &#10;&quot;111000...000000&quot; &#10;add delimiter '#' &#10;add delimiter '#' &#10;to make the keys different. &#13;&#10;Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6215in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.284in;
+  height:.6215in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>Edge case</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> = use </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#FA0000'>delimiter</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> to avoid
+        situations where keys are the same for different char counts.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.5548in;
+  height:.6215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.4263in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.284in;
+  height:1.4263in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.5548in;
+  height:1.4263in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.543in;margin-left:0in;width:16.5527in'><img
+src="Group_Anagrams_files/image016.png" width=1589 height=17></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with OneNote.</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,2377 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Encode_and_Decode_Strings.htm">
+<link rel=File-List href="Encode_and_Decode_Strings_files/filelist.xml">
+</head>
+
+<body lang=en-US style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:16.7743in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0708in;width:3.7138in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt'><span
+style='font-weight:bold'>Encode and Decode Strings</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0708in;width:2.5881in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Wednesday,
+August 17, 2022</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>1:35
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:1.0743in;margin-left:.4076in;width:2.0347in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt;color:#FA0000'><img
+ src="Encode_and_Decode_Strings_files/image001.png" width=16 height=16
+ alt=Important>&nbsp;<span style='font-weight:bold'>Problem Notes</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.6583in;margin-left:
+ 1.2222in;width:14.2444in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.3486in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.9791in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.9166in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.302in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.3486in;height:6.7812in'><img
+  src="Encode_and_Decode_Strings_files/image002.png" width=705 height=651
+  alt="Untitled picture.png Machine generated alternative text:&#10;271. Encode and Decode Strings &#10;Medium 1015 277 Add List &#10;[C Share &#10;Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is &#10;decoded back to the original list of strings. &#10;Machine 1 (sender) has the function: &#10;string encode strs) { &#10;. your code &#10;return encoded string; &#10;Machine 2 (receiver) has the function: &#10;decode(string s) { &#10;your code &#10;return strs; &#10;So Machine 1 does: &#10;string encoded string &#10;and Machine 2 does: &#10;strs2 = &#10;encode(strs) ; &#10;decode(encoded_string) ; &#10;strs2 in Machine 2 should be the same as strs in Machine 1. &#10;Implement the encode and decode methods. &#10;You are not allowed to solve the problem using any serialize methods (such as eval ). &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.9791in;
+  height:.302in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.9166in;
+  height:.302in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:3.5104in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.9791in;
+  height:3.5104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.9166in;
+  height:3.5104in'><img src="Encode_and_Decode_Strings_files/image003.png"
+  width=564 height=333></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.9687in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.9791in;
+  height:2.9687in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.9166in;
+  height:2.9687in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=7 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.202in;margin-left:
+ 1.4666in;width:12.9486in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.875in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:6.0111in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.875in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.0555in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=6 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:6.0111in;height:2.4229in'><img
+  src="Encode_and_Decode_Strings_files/image004.png" width=573 height=228></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=6 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:3.875in;height:2.4187in'><img
+  src="Encode_and_Decode_Strings_files/image005.png" width=367 height=228></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.4083in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.434in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:1.434in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:1.434in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:1.4347in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>One '</span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>#</span><span style='font-family:Calibri;font-size:12.0pt;
+        color:#E84C22'>' delimiter is not enough as words might contain that
+        char</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt'>We can count the
+        characters length and prefix the number.<span
+        style='mso-spacerun:yes'>  </span></span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:1.434in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:1.434in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.1458in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2125in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.2125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:2.4798in;height:.2131in'><img
+  src="Encode_and_Decode_Strings_files/image006.png" width=238 height=20></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.2125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.1638in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.3166in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2909in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0354in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1534in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2652in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:6.0111in;
+  height:.052in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=5 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.4923in;margin-left:
+ 1.4562in;width:11.6368in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2812in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.225in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.3402in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=5 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:4.2812in;height:2.6229in'><img
+  src="Encode_and_Decode_Strings_files/image007.png" width=406 height=247></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:.3402in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:.3402in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:.3402in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.225in;
+  height:.3402in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.8513in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:.8513in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:.8513in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:.8513in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:4.225in;height:2.052in'><img
+  src="Encode_and_Decode_Strings_files/image008.png" width=401 height=192></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:.2138in'><img src="Encode_and_Decode_Strings_files/image009.png"
+  width=213 height=20></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.9861in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:.9861in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:.9861in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:.9861in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2298in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.452in;
+  height:.2298in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.2208in;
+  height:.2298in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4569in;
+  height:.2298in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.225in;
+  height:.2298in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.0201in;margin-left:2.5437in;width:2.9937in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+  margin-bottom:0in'>
+  <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+      style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>integer tells
+      us </span><span style='font-weight:bold;font-family:Calibri;font-size:
+      12.0pt;color:#7030A0'>how many characters</span><span style='font-family:
+      Calibri;font-size:12.0pt;color:#E84C22'> are in the word</span></li>
+ </ul>
+</ul>
+
+</div>
+
+<div style='direction:ltr;margin-top:.825in;margin-left:.0104in;width:16.5527in'><img
+src="Encode_and_Decode_Strings_files/image010.png" width=1589 height=17></div>
+
+<div style='direction:ltr;margin-top:.493in;margin-left:.3979in;width:6.777in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt;color:#FA0000'><img
+ src="Encode_and_Decode_Strings_files/image001.png" width=16 height=16
+ alt=Important>&nbsp;<span style='font-weight:bold'>Approach # 1 (Best) - Use a
+ Delimiter and Add Integers to Track Word Length</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.784in;margin-left:
+ .9229in;width:14.443in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.2in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.7263in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0256in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.2in;height:4.7333in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.1881in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#C63B15'><span style='mso-spacerun:yes'> </span></span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N)</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#7030A0'>&nbsp;</p>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.1881in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'><span
+          style='mso-spacerun:yes'> </span></span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#201F1E'>O(N)</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.2326in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#767676'><span
+          style='font-weight:bold;font-style:italic;font-family:Calibri;
+          font-size:12.0pt'>ENCODE</span></li>
+      <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+       margin-bottom:0in'>
+       <li style='margin-top:0;margin-bottom:0;vertical-align:middle;
+           color:#E84C22'><span style='font-weight:bold;font-family:Calibri;
+           font-size:12.0pt;color:#538135'>Loop</span><span style='font-family:
+           Calibri;font-size:12.0pt;color:#E84C22'> through the list of strings
+           and</span><span style='font-weight:bold;font-family:Calibri;
+           font-size:12.0pt;color:#7030A0'> append the length</span><span
+           style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>,</span><span
+           style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+           color:#7030A0'> '#' char</span><span style='font-family:Calibri;
+           font-size:12.0pt;color:#E84C22'>, and</span><span style='font-weight:
+           bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'> string</span><span
+           style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> to a </span><span
+           style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+           color:#7F6000'>new string</span><span style='font-family:Calibri;
+           font-size:12.0pt;color:#E84C22'> to later be decoded.<span
+           style='mso-spacerun:yes'>  </span></span></li>
+      </ul>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#767676'><span
+          style='font-weight:bold;font-style:italic;font-family:Calibri;
+          font-size:12.0pt'>DECODE</span></li>
+      <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+       margin-bottom:0in'>
+       <li style='margin-top:0;margin-bottom:0;vertical-align:middle;
+           color:#E84C22'><span style='font-family:Calibri;font-size:12.0pt;
+           color:#E84C22'>On the first loop </span><span style='font-weight:
+           bold;font-family:Calibri;font-size:12.0pt;color:#7F6000'>[ j ] </span><span
+           style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>is set to
+           </span><span style='font-weight:bold;font-family:Calibri;font-size:
+           12.0pt;color:#7F6000'>[ i ] </span><span style='font-family:Calibri;
+           font-size:12.0pt;color:#E84C22'>and </span><span style='font-weight:
+           bold;font-family:Calibri;font-size:12.0pt;color:#7F6000'>[ j ] </span><span
+           style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>increments
+           until it finds a</span><span style='font-weight:bold;font-family:
+           Calibri;font-size:12.0pt;color:#7030A0'> '#'</span><span
+           style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>
+           char.<span style='mso-spacerun:yes'>  </span>This </span><span
+           style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+           color:#7030A0'>finds the string len</span><span style='font-family:
+           Calibri;font-size:12.0pt;color:#E84C22'> that was encoded.</span></li>
+      </ul>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Then it </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>converts</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> the string number before </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>'#' </span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'><span
+          style='mso-spacerun:yes'> </span>char to an </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>int</span></li>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>The </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>int </span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'>is used to read the num of chars of
+          the string and append that slice back to an array of strings.</span></li>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Then the </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7F6000'><span style='mso-spacerun:yes'> </span>[ i ]</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> variable
+          is advanced past the string </span><span style='font-weight:bold;
+          font-family:Calibri;font-size:12.0pt;color:#7F6000'>[ i + j + length
+          ] </span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#E84C22'>to start reading what the next number </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>int </span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'>will be.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.7263in;
+  height:.0256in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:.0256in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.25in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.7263in;
+  height:2.25in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5166in;
+  height:2.25in'><img src="Encode_and_Decode_Strings_files/image011.png"
+  width=530 height=216
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/encode-and-decode-strings/&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.4569in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.7263in;
+  height:2.4569in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:2.4569in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.5541in;margin-left:1.05in;width:6.1145in'><img
+src="Encode_and_Decode_Strings_files/image012.png" width=582 height=458></div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=5 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.0326in;margin-left:
+ .925in;width:14.7993in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:10.484in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1409in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1305in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7729in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6666in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=5 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:10.484in;height:5.5006in'><img
+  src="Encode_and_Decode_Strings_files/image013.png" width=1006 height=528
+  alt="Untitled picture.png Machine generated alternative text:&#10;class Codec: &#10;def encode(self, strs: list[str]) &#10;-&gt; str: &#10;&quot;&quot;&quot;Encodes a List of strings to a single string. &#10;res = ' &#10;for s in strs: &#10;res + + s &#10;return res &#10;def decode(self, &#10;s: str) list[str]: &#10;&quot;&quot;&quot;Decodes a single string to a List of strings. &#10;while i &lt;len(s): &#10;j+=l &#10;# two pointers, &#10;i and j &#10;length = # num char to read after j; &#10;res. append(s [j+l &#10;. j+l+length]) &#10;j + 1 + length &#10;return res &#10;splice goes up to not including j so doesn't include the # &#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:.6666in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1409in;
+  height:.6666in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1305in;
+  height:.6666in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7729in;
+  height:.6666in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1409in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1305in;
+  height:.2138in'>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#FA0000'><span
+  style='font-weight:bold'>ENCODE</span></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7729in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1409in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1305in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7729in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6208in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:.6208in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:4.0451in;height:.6208in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#538135'>Loop</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'> through the list of strings and</span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'> append the length</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'>,</span><span style='font-weight:bold;
+        font-family:Calibri;font-size:12.0pt;color:#7030A0'> '#' char</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>, and</span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'> string</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> to a </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7F6000'>new string</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> to later be
+        decoded.<span style='mso-spacerun:yes'>  </span></span></li>
+   </ul>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:3.7854in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2694in;
+  height:3.7854in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1409in;
+  height:3.7854in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1305in;
+  height:3.7854in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7729in;
+  height:3.7854in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.2388in;margin-left:.9145in;width:10.8541in'><img
+src="Encode_and_Decode_Strings_files/image014.png" width=1038 height=89></div>
+
+<div style='direction:ltr;margin-top:.3326in;margin-left:.852in;width:9.8125in'><img
+src="Encode_and_Decode_Strings_files/image015.png" width=942 height=59
+alt="Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;25 CHARS INCLUDING SPACES&#13;&#10;"></div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=5 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.4104in;margin-left:
+ .9041in;width:15.8701in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:10.6097in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1104in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1256in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.9305in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.1562in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=5 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:10.6097in;height:4.8784in'><img
+  src="Encode_and_Decode_Strings_files/image016.png" width=1019 height=468
+  alt="Untitled picture.png Machine generated alternative text:&#10;class Codec: &#10;def encode(self, strs: list[str]) &#10;-&gt; str: &#10;&quot;&quot;&quot;Encodes a List of strings to a single string. &#10;length: 25 &#10;res: [l &#10;s: '25#one ring &#10;&gt; self: &lt; main &#10;) Globals &#10;WATCH &#10;D 24 &#10;to rule them &#10;. Codec object &#10;a1121#one ring to find &#10;at øxøøøeø1A8164F31øø&gt; &#10;t hem 26#o ne &#10;ring tom &#10;res = ' &#10;for s in strs: &#10;res str(len(s)) + + s &#10;return res &#10;def decode(self, &#10;s: str) list[str]: &#10;4#word18i &#10;&quot;&quot;&quot;Decodes a single string to a List of strings. &#10;# two pointers, &#10;i and j &#10;21 &#10;while i &lt;len(s): &#10;while s[j] &#10;j+=l &#10;length &#10;# num char to read after &#10;res. : j+l+length] &#10;j + 1 + length &#10;return res &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:2.1562in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1104in;
+  height:2.1562in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1256in;
+  height:2.1562in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.9305in;
+  height:2.1562in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2145in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:.2145in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1104in;
+  height:.2145in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1263in;
+  height:.2145in'>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#FA0000'><span
+  style='font-weight:bold'>DECODE</span></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.9305in;
+  height:.2145in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.3583in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:.3583in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1104in;
+  height:.3583in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1256in;
+  height:.3583in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.9305in;
+  height:.3583in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.0451in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:2.0451in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.168in;height:2.0451in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>On the first
+        loop </span><span style='font-weight:bold;font-family:Calibri;
+        font-size:12.0pt;color:#7F6000'>[ j ] </span><span style='font-family:
+        Calibri;font-size:12.0pt;color:#E84C22'>is set to </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7F6000'>[ i ] </span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'>and </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7F6000'>[ j ] </span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>increments
+        until it finds a</span><span style='font-weight:bold;font-family:Calibri;
+        font-size:12.0pt;color:#7030A0'> '#'</span><span style='font-family:
+        Calibri;font-size:12.0pt;color:#E84C22'> char.<span
+        style='mso-spacerun:yes'>  </span>This </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>finds the
+        string len</span><span style='font-family:Calibri;font-size:12.0pt;
+        color:#E84C22'> that was encoded.</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Then it </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>converts</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> the string number before </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>'#' </span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'><span style='mso-spacerun:yes'> </span>char to an
+        </span><span style='font-weight:bold;font-family:Calibri;font-size:
+        12.0pt;color:#538135'>int</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>The </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#538135'>int </span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'>is used to read the num of chars of the string
+        and append that slice back to an array of strings.</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Then the </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7F6000'><span style='mso-spacerun:yes'> </span>[ i ]</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> variable is
+        advanced past the string </span><span style='font-weight:bold;
+        font-family:Calibri;font-size:12.0pt;color:#7F6000'>[ i + j + length ] </span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>to start
+        reading what the next number </span><span style='font-weight:bold;
+        font-family:Calibri;font-size:12.0pt;color:#538135'>int </span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>will be.</span></li>
+   </ul>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0916in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1104in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.1256in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.9305in;
+  height:.1034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=7 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.1402in;margin-left:
+ .9458in;width:13.2819in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3305in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2138in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2791in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.0069in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0208in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td colspan=3 rowspan=4 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:2.8236in;height:.2923in'><img
+  src="Encode_and_Decode_Strings_files/image017.png" width=267 height=24></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.0208in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.0208in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.0208in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.0069in;
+  height:.0208in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.018in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.018in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.018in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.018in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=5 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.0069in;height:1.1055in'><img
+  src="Encode_and_Decode_Strings_files/image018.png" width=481 height=106
+  alt="s [ j +1 : j + 1 + length ]&#13;&#10;s [ 2 +1 : 2 + 1 + 25]&#13;&#10;s [ 3 : 28 ]  = from index 3 up to and NOT INCLUDING index 28&#13;&#10;&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.2138in'><img src="Encode_and_Decode_Strings_files/image019.png"
+  width=477 height=20></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.2131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0388in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.0388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.0388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.0388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3305in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2138in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2791in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.1291in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3305in;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:.2138in;height:.793in'><img
+  src="Encode_and_Decode_Strings_files/image020.png" width=20 height=76></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2791in;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3305in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2791in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2534in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9701in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2263in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.0069in;
+  height:.0888in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=17 valign=top
+ style='direction:ltr;border-collapse:collapse;border-width:0pt;margin-top:
+ .2013in;margin-left:.8833in;width:15.1458in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.4687in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=7 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:2.4687in;height:.6048in'><img
+  src="Encode_and_Decode_Strings_files/image021.png" width=237 height=58
+  alt="Untitled picture.png &#13;&#10;Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:0in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td colspan=5 rowspan=4 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:1.9583in;height:.2812in'><img
+  src="Encode_and_Decode_Strings_files/image022.png" width=183 height=22></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=2 rowspan=2 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:5.0006in;height:.2138in'><img
+  src="Encode_and_Decode_Strings_files/image023.png" width=480 height=20></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.1791in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 rowspan=5 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:3.6in;height:.418in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>reset i</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> to point to </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#538135'>past the word</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> (</span><span style='font-weight:bold;
+        font-family:Calibri;font-size:12.0pt;color:#7F6000'>length</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>) and </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#538135'>past the int</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> ( </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7F6000'>j</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> ).</span></li>
+   </ul>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0486in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.1284in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=4 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:.2131in;height:.7923in'><img
+  src="Encode_and_Decode_Strings_files/image024.png" width=20 height=76></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.1937in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.4687in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.4687in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0416in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.5722in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 rowspan=8 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:2.5416in;height:.6041in'><img
+  src="Encode_and_Decode_Strings_files/image025.png" width=244 height=58
+  alt="Untitled picture.png Machine generated alternative text:&#10;i: 28 &#13;&#10;Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0979in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:2.7444in;height:.2145in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>reset j to i</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> to find new num.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 rowspan=4 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:.9486in;height:.2819in'><img
+  src="Encode_and_Decode_Strings_files/image026.png" width=87 height=23></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=2 rowspan=2 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:5.0in;height:.2131in'><img
+  src="Encode_and_Decode_Strings_files/image027.png" width=480 height=20></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.1902in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0006in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8333in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5243in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2131in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.2097in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.1763in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0451in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.052in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.9472in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0534in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.4104in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5347in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0312in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.7444in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8243in;
+  height:.0833in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.875in;margin-left:0in;width:16.5527in'><img
+src="Encode_and_Decode_Strings_files/image028.png" width=1589 height=17></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with OneNote.</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1297 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Contains_Duplicate.htm">
+<link rel=File-List href="Contains_Duplicate_files/filelist.xml">
+</head>
+
+<body lang=en-US style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:16.584in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0708in;width:2.7402in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt;color:#201F1E'><span
+style='font-weight:bold'>Contains Duplicate</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0708in;width:2.5881in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Wednesday,
+August 17, 2022</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>1:35
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.7034in;margin-left:.3243in;width:6.2625in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt'><img src="Contains_Duplicate_files/image001.png" width=16
+ height=16 alt=Important>&nbsp;<span style='font-weight:bold;color:#FA0000'>Approach
+ # 1 (Worst) - Naive Linear Search = </span><span style='font-weight:bold;
+ color:#538135'>TIME LIMIT EXCEEDED</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.3305in;margin-left:
+ 1.2041in;width:14.9222in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.9763in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.4291in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0868in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.9763in;
+  height:.0868in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.4291in;
+  height:.0868in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.25in'><img src="Contains_Duplicate_files/image002.png"
+  width=530 height=216
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/contains-duplicate/&#13;&#10;https://neetcode.io/&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.1625in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.9763in;height:3.1055in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:2.1284in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.7534in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N²)</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#201F1E'> - </span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Square/Polynomial
+          Complexity </span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt'>Time complexity grows
+          proportionally to the square of the input size as have to loop
+          through everything twice.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:2.1284in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.6847in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(1</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#201F1E'>) - </span><span style='font-weight:bold;
+          font-family:Calibri;font-size:12.0pt;color:#7030A0'><span
+          style='mso-spacerun:yes'> </span>Constant Complexity </span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt'>Takes the same amount of
+          space regardless of the input size.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:2.1284in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.702in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>Outer loop</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> goes through list of numbers. </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'><span style='mso-spacerun:yes'> </span>Inner loop</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> goes
+          through all previous elements behind the current element of the outer
+          loop.<span style='mso-spacerun:yes'>  </span></span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>If one of
+          the </span><span style='text-decoration:underline;font-family:Calibri;
+          font-size:12.0pt;color:#7030A0'>previous elements equals the current
+          element</span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>, there is a duplicate, so return true</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>.<span
+          style='mso-spacerun:yes'>  </span>Else return false.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.4291in;
+  height:2.1625in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.943in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.4291in;
+  height:.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:2.0506in;margin-left:1.2479in;width:6.4173in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85"><span
+style='font-weight:bold'>https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85</span></a></p>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.6708in;margin-left:
+ 1.2312in;width:10.3708in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.4861in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.509in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.3756in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.3708in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.4861in;
+  height:.3708in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.509in;
+  height:.3708in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.3756in;height:4.0736in'><img
+  src="Contains_Duplicate_files/image003.png" width=512 height=386></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.027in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.4861in;
+  height:1.0277in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Brute
+        force.<span style='mso-spacerun:yes'>  </span></span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#FA0000'>Fix one element </span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'>and </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>look at all </span><span
+        style='font-weight:bold;text-decoration:underline;font-family:Calibri;
+        font-size:12.0pt;color:#538135'>previous</span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'> elements</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> to see if
+        it is in the array.</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Then </span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#FA0000'>move onto
+        the next element and check</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'> all previous elements.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.509in;
+  height:1.027in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.675in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.4861in;
+  height:2.675in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.509in;
+  height:2.675in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.3611in;margin-left:0in;width:16.5527in'><img
+src="Contains_Duplicate_files/image004.png" width=1589 height=17></div>
+
+<div style='direction:ltr;margin-top:.2201in;margin-left:.4291in;width:3.1062in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt;color:#FA0000'><img
+ src="Contains_Duplicate_files/image001.png" width=16 height=16 alt=Important>&nbsp;<span
+ style='font-weight:bold'>Approach # 2 (Mid) - Sorting</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.5569in;margin-left:
+ .8916in;width:14.6305in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.8375in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2763in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0236in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.8375in;
+  height:.0236in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2763in;
+  height:.0236in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.25in'><img src="Contains_Duplicate_files/image005.png"
+  width=530 height=216
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/contains-duplicate/&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.2256in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.8375in;height:2.9027in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.927in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#C63B15'><span
+          style='mso-spacerun:yes'> </span></span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#201F1E'>O(N*log N)</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'> - </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>Log-Linear/Quasilinear Complexity or Lineararithmic.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>Sorting </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>is O(n log
+          n) </span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>Sweeping </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>is </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#201F1E'>O(n)</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Both
+          combine to</span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'> O(N*log N) </span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.927in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(1)</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:5.9715in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>Sort </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>the list
+          of numbers.<span style='mso-spacerun:yes'>   </span>Then </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>loop once</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> through
+          the array, starting at the second element (pos 1), and looking
+          backwards to see if there is a duplicate.<span
+          style='mso-spacerun:yes'>  </span></span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>If a
+          duplicate, it will always be </span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#7030A0'>next to the number</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> due to
+          the sorting.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2763in;
+  height:2.2256in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6763in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2763in;
+  height:.6763in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:.6763in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.9409in;margin-left:.925in;width:6.4173in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85"><span
+style='font-weight:bold'>https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85</span></a></p>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=5 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.1729in;margin-left:
+ .8833in;width:15.0152in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.0312in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0368in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:6.2298in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0562in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0125in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.0312in;
+  height:.0125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:.0125in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=3 rowspan=2 valign=top style='vertical-align:top;margin:0in;
+  padding:0pt;width:6.3236in;height:1.4694in'><img
+  src="Contains_Duplicate_files/image006.png" width=603 height=137></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.4562in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.0312in;height:4.0958in'><img
+  src="Contains_Duplicate_files/image007.png" width=675 height=393
+  alt="Aq09a.png &#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:1.4562in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0368in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:6.2298in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0562in;
+  height:.0215in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.6173in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:2.6173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0368in;
+  height:2.6173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:6.2298in;height:2.9381in'><img
+  src="Contains_Duplicate_files/image008.png" width=594 height=277></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0562in;
+  height:2.6173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.3201in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.0312in;
+  height:.3201in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.6604in;
+  height:.3201in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0368in;
+  height:.3201in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0562in;
+  height:.3201in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=5 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.6562in;margin-left:
+ 1.1062in;width:15.2687in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.6201in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1673in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:.1673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:.1673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=5 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.6208in;height:4.2819in'><img
+  src="Contains_Duplicate_files/image009.png" width=828 height=411
+  alt="Untitled picture.png Machine generated alternative text:&#10;v class Solution: &#10;def containsDup1icate(se1f, &#10;n = len(nums) &#10;if n &lt; 2: &#10;return False &#10;nums. sort() &#10;for i in range(l, n): &#10;if nums[i-l] &#10;return True &#10;return False &#10;nums = &#10;nums2 — &#10;nums3 — &#10;nums : &#10;list[int]) &#10;bool: &#10;nums[i]: &#10;# In-place sorting time sort (merge/insertion sort) &#10;# True &#10;# False &#10;# True &#10;print(S01ution ( ) . containsDup1i cate (nums ) ) &#10;print(S01ution ( ) . containsDup1i cate (nums2) ) &#10;print(S01ution . containsDup1icate (nums3)) &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:.1673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:.1673in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.6388in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:1.6388in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Improved
+        time complexity from naive linear search.<span
+        style='mso-spacerun:yes'>  </span></span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#7030A0'>If there is a duplicate, it will always
+        be consecutive</span><span style='font-family:Calibri;font-size:12.0pt;
+        color:#E84C22'> (</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#538135'>since sorted</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'>), so we know exactly where to look at
+        each duplicate check, instead of checking every element.</span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#FA0000'>Start at
+        index 1, check previous</span><span style='font-family:Calibri;
+        font-size:12.0pt;color:#E84C22'>, then move down list always checking
+        previous.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:1.6388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:1.6388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:1.6388in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.943in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:1.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:1.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:1.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:1.943in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:.4173in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt'>Starts at pos 2</span></li>
+   </ul>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1138in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:3.5583in;
+  height:.1138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0201in;
+  height:.1138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0506in;
+  height:.1138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.0187in;
+  height:.1138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.5111in;margin-left:.0104in;width:16.5527in'><img
+src="Contains_Duplicate_files/image010.png" width=1589 height=17></div>
+
+<div style='direction:ltr;margin-top:.4076in;margin-left:.4916in;width:3.2611in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt;color:#FA0000'><img
+ src="Contains_Duplicate_files/image001.png" width=16 height=16 alt=Important>&nbsp;<span
+ style='font-weight:bold'>Approach # 3 (Best) - Hash Set</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.525in;margin-left:
+ .9229in;width:14.7451in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.3361in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8923in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5166in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0798in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.3361in;
+  height:.0798in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8923in;
+  height:.0798in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.25in'><img src="Contains_Duplicate_files/image011.png"
+  width=530 height=216
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://leetcode.com/problems/contains-duplicate/&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.1694in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.3361in;height:3.1055in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.425in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N)</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#201F1E'> - </span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Linear
+          Complexity</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Search()
+          and </span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>Insert()</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> done </span><span style='font-weight:
+          bold;font-style:italic;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>n</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> times.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#7030A0'>&nbsp;</p>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.425in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N)</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt'>The space used by a hash
+          table is linear with the number of elements in it.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.7472in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.4944in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Use a </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#538135'>hash set</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> that does
+          NOT allow for duplicates.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>Loop</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> through
+          the array </span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>once</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'>.<span style='mso-spacerun:yes'> 
+          </span>Check i</span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>f number is in the hash set</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>, if not, </span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#7030A0'>add to the
+          hash set</span><span style='font-family:Calibri;font-size:12.0pt;
+          color:#E84C22'> and continue, if it is, then there is a duplicate .</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8923in;
+  height:2.1694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.9361in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.8923in;
+  height:.9361in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5166in;
+  height:.9361in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.2479in;margin-left:1.1437in;width:6.4173in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85"><span
+style='font-weight:bold'>https://medium.com/@virajmavani/contains-duplicate-leetcode-217-477be38d3c85</span></a></p>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=7 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.8166in;margin-left:
+ 1.0229in;width:14.4326in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2673in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:6.8506in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2673in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=7 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:6.8513in;height:6.0423in'><img
+  src="Contains_Duplicate_files/image012.png" width=658 height=580
+  alt="Untitled picture.png Machine generated alternative text:&#10;1 v class Solution: &#10;def containsDup1icate_1(se1f, &#10;hashset = set() &#10;for number in nums: &#10;if number in hashset: &#10;return True &#10;hashset. add ( number) &#10;return False &#10;def containsDup1icate_2(se1f, &#10;nums : &#10;nums : &#10;list [int)) &#10;list [int)) &#10;-&gt; bool: &#10;-&gt; bool: &#10;return len(set(nums)) &lt; len(nums) &#10;nums = &#10;nums2 — &#10;nums3 — &#10;print(S01ution ( ) . containsDup1i cate_l (nums ) ) &#10;print(S01ution ( ) . containsDup1i cate_l (nums2) ) &#10;print(S01ution ( ) . contai nsDup1i cate_l (nums3) ) &#10;print(S01ution ( ) . contai nsDup1i cate_2 (nums ) ) &#10;print(S01ution ( ) . contai nsDup1i cate_2 (nums2) ) &#10;print(S01ution ( ) . containsDup1i cate_2 (nums3) ) &#10;# True &#10;# False &#10;# True &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;ONE LINE SOLUTION&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;O(1) Lookup&#13;&#10;"></td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:.1041in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:4.2673in;height:1.6381in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>The most </span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#FA0000'>optimal
+        approach in terms of time complexity </span><span style='font-family:
+        Calibri;font-size:12.0pt;color:#7030A0'>does indeed use extra space</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>. But, as
+        discussed before, space is cheap and time invaluable. </span></li>
+   </ul>
+   <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:12.0pt;
+   color:#E84C22'>&nbsp;</p>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Therefore,
+        we can simple put all elements in a </span><span style='font-weight:
+        bold;font-family:Calibri;font-size:12.0pt;color:#538135'>Hash Set</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> and as it
+        does not allow for duplicates, the </span><span style='font-weight:
+        bold;font-style:italic;font-family:Calibri;font-size:12.0pt;color:#0070C0'>size</span><span
+        style='font-family:Calibri;font-size:12.0pt;color:#7030A0'> of the
+        resulting Hash Set should be equal to the length of the array if there
+        are no duplicates</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'> and less otherwise.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:.7916in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:1.4in;height:.2138in'>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#FA0000'><span
+  style='font-weight:bold'>O(1) Lookup</span></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:.6319in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2673in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:1.0694in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2673in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:.2138in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td colspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:1.9576in;height:.2145in'>
+  <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#FA0000'><span
+  style='font-weight:bold'>ONE LINE SOLUTION</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.2673in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.2694in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0243in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.0625in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1.3368in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.6201in;
+  height:3.0152in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:1.1576in;margin-left:.0312in;width:16.5527in'><img
+src="Contains_Duplicate_files/image013.png" width=1589 height=17></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with OneNote.</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Top_K_Frequent_Elements.htm">
+<link rel=File-List href="Top_K_Frequent_Elements_files/filelist.xml">
+</head>
+
+<body lang=en-US style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:16.5527in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0708in;width:3.4722in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt;color:#201F1E'><span
+style='font-weight:bold'>Top K Frequent Elements</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0708in;width:2.5881in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Wednesday,
+August 17, 2022</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>1:35
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.7243in;margin-left:.3243in;width:3.4902in'>
+
+<ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:0in'>
+ <p style='color:#000000;margin:0in;text-indent:-.1666in;font-family:Calibri;
+ font-size:14.0pt;color:#FA0000'><img
+ src="Top_K_Frequent_Elements_files/image001.png" width=16 height=16
+ alt=Important>&nbsp;<span style='font-weight:bold'>Approach # 1 (Best) -
+ Bucket Sort</span></p>
+</ul>
+
+</div>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.7756in;margin-left:
+ .8812in;width:14.4847in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.4388in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5284in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.0027in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:8.4388in;
+  height:.0027in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5284in;
+  height:.0027in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:5.5166in;height:2.4222in'><img
+  src="Top_K_Frequent_Elements_files/image002.png" width=530 height=233
+  alt="Untitled picture.png &#13;&#10;﷟HYPERLINK &quot;file:///C:\Users\miwan\Desktop\Git\LeetCode-Python&quot;C:\Users\miwan\Desktop\Git\LeetCode-Python&#13;&#10;Ink Drawings&#13;&#10;https://neetcode.io/&#13;&#10;Untitled picture.png &#13;&#10;https://leetcode.com/problems/top-k-frequent-elements&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:2.4194in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td rowspan=2 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:8.4395in;height:4.1229in'>
+  <div style='direction:ltr'>
+  <table border=1 cellpadding=0 cellspacing=0 valign=top style='direction:ltr;
+   border-collapse:collapse;border-style:solid;border-color:#A3A3A3;border-width:
+   1pt' title="" summary="">
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Time Complexity</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.4277in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#C63B15'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#C63B15'><span style='mso-spacerun:yes'> </span></span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N) Linear Time</span></li>
+     </ul>
+     <p style='margin:0in;margin-left:.375in;font-family:Calibri;font-size:
+     12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>N</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the length of the num array</span></li>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>K</span><span style='font-family:Calibri;font-size:
+          12.0pt;color:#E84C22'> is the number of elements with the most count
+          to add to result</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Space Complexity </span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.4277in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#C63B15'><span style='mso-spacerun:yes'> </span></span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#201F1E'>O(N) Linear Space</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#201F1E'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>As need to
+          create a </span><span style='font-weight:bold;font-family:Calibri;
+          font-size:12.0pt;color:#538135'>dictionary</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> or </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>hashmap</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'>.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+   <tr>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:1.8486in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#0070C0'><span
+    style='font-weight:bold'>Summary</span></p>
+    </td>
+    <td style='border-style:solid;border-color:#A3A3A3;border-width:1pt;
+    vertical-align:top;width:6.45in;padding:2.0pt 3.0pt 2.0pt 3.0pt'>
+    <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+     0in'>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Create a </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#538135'>hashmap</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> where </span><span style='font-weight:
+          bold;font-family:Calibri;font-size:12.0pt;color:#7030A0'>Key</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> = num and
+          </span><span style='font-weight:bold;font-family:Calibri;font-size:
+          12.0pt;color:#7030A0'>Value</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> = count.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'>Create a</span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#0070C0'> frequency array</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> of empty arrays up to len of N+1, as
+          0 indexed</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#7030A0'>Loop through dictionary</span><span style='font-family:
+          Calibri;font-size:12.0pt;color:#E84C22'> with </span><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#E84C22'>enumerate()</span><span style='font-family:Calibri;
+          font-size:12.0pt;color:#E84C22'> and append Nums to index of
+          frequency array where index = count.</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+     <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+      margin-bottom:0in'>
+      <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+          style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+          color:#FA0000'>Loop backwards through the frequency array</span><span
+          style='font-family:Calibri;font-size:12.0pt;color:#E84C22'> to append
+          the highest frequency numbers to the result, with (-1, 0, -1).</span></li>
+     </ul>
+     <p style='margin:0in;font-family:Calibri;font-size:12.0pt;color:#E84C22'>&nbsp;</p>
+    </ul>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5284in;
+  height:2.4194in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.7034in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:.5284in;
+  height:1.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:5.5159in;
+  height:1.7034in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:1.1013in;margin-left:
+ 1.3666in;width:13.5437in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.3569in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.1847in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.0013in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.7131in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.3569in;
+  height:.7131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.1847in;
+  height:.7131in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.002in;height:4.934in'><img
+  src="Top_K_Frequent_Elements_files/image003.png" width=672 height=474
+  alt="Untitled picture.png Machine generated alternative text:&#10;bu c4&lt;e &#10;t) 0-1 &#10;100 &#13;&#10;Ink Drawings&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.6201in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.3569in;
+  height:.6208in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>MID</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'>:<span style='mso-spacerun:yes'>  </span>We could
+        have the numbers as keys and count as values, </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#FA0000'>BUT </span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'>the input values are not bounded.. one could be
+        1,000,000.<span style='mso-spacerun:yes'>  </span>So this would </span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#FA0000'>not</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'> be linear O(N) time.</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.1847in;
+  height:.6201in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:3.6in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.3569in;
+  height:3.6in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.1847in;
+  height:3.6in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 cols=3 valign=top style='direction:
+ ltr;border-collapse:collapse;border-width:0pt;margin-top:.2319in;margin-left:
+ 1.3666in;width:13.5333in'>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.4604in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0701in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:7.002in;
+  height:1px;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.1819in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.4604in;
+  height:1.1819in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0701in;
+  height:1.1819in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td rowspan=3 valign=top style='vertical-align:top;margin:0in;padding:0pt;
+  width:7.002in;height:3.5111in'><img
+  src="Top_K_Frequent_Elements_files/image004.png" width=672 height=337
+  alt="Untitled picture.png Machine generated alternative text:&#10;coo &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.4604in;
+  height:.4173in'>
+  <ul style='direction:ltr;unicode-bidi:embed;margin-top:0in;margin-bottom:
+   0in'>
+   <ul type=disc style='direction:ltr;unicode-bidi:embed;margin-top:0in;
+    margin-bottom:0in'>
+    <li style='margin-top:0;margin-bottom:0;vertical-align:middle;color:#E84C22'><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#7030A0'>BEST</span><span style='font-family:Calibri;font-size:
+        12.0pt;color:#E84C22'>:<span style='mso-spacerun:yes'>  </span></span><span
+        style='font-weight:bold;font-family:Calibri;font-size:12.0pt;
+        color:#538135'>Count should be the key</span><span style='font-family:
+        Calibri;font-size:12.0pt;color:#E84C22'> as we know the count can't be
+        longer than the list, so that is bounded!</span></li>
+   </ul>
+  </ul>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0701in;
+  height:.4173in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:1px;
+  height:1.9104in;font-size:1pt'>
+  <p style='font-size:1pt'>&nbsp;</p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:4.4604in;
+  height:1.9104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+  <td valign=top style='vertical-align:top;margin:0in;padding:0pt;width:2.0701in;
+  height:1.9104in;font-size:1pt'>
+  <p style='font-size:1pt'></p>
+  </td>
+ </tr>
+</table>
+
+<div style='direction:ltr;margin-top:.6777in;margin-left:.5597in;width:15.2465in'><nobr><img
+src="Top_K_Frequent_Elements_files/image005.png" width=1464 height=960
+alt="Untitled picture.png Machine generated alternative text:&#10;RUN AND DEBUG &#10;count : &#10;) counter: {I: 3, &#10;freq: &#10;num : &#10;nums: &#10;) res: &#10;self: &lt; main &#10;WATCH &#10;•e Top K Frequent Elements.pyU X &#10;•e Top K Frequent Elements.py &gt; Solution &gt; topKFrequent &#10;class Solution: &#10;def topKFrequent(se1f, nums: list[int], k: int) &#10;list[int . &#10;{1: &#10;3] &#10;. Solution &#10;counter = &#10;freq = [C] for &#10;n In nums: &#10;counter[n] &#10;num, count &#10;i in range(len(nums)+l)] &#10;1 + counter .get(n, e) &#10;in counter. items(): &#10;C]] for len 6 &#10;object &#10;at &#10;exeøøøø21Aø4CAA4Fø&gt; &#10;freq [count] . append ( num) &#10;i in range(len(freq) &#10;for n in freq[i]: &#10;res . append (n) &#10;if len(res) &#10;turn res &#10;-1, &#10;e, &#10;D 23 &#10;nums = &#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;FREQUENCY ARRAY&#13;&#10;Each element is a list of numbers, whose index is the count of those numbers.&#13;&#10;Ink Drawings&#13;&#10;Loop through the dictionary and append numbers to the indices of each count.&#13;&#10;Ink Drawings&#13;&#10;Untitled picture.png &#13;&#10;Ink Drawings&#13;&#10;Key = num&#13;&#10;Value = count&#13;&#10;Ink Drawings&#13;&#10;Ink Drawings&#13;&#10;We loop through the frequency array,  backwards.  As each element is a list, we then loop through each number in the sub-list and append each number to the result.&#13;&#10;.ITEMS() DON'T USE ENUMERATE&#13;&#10;WE WANT THE KEY/VALUE PAIR NOT INDEX/VALUE&#13;&#10;￼&#13;&#10;￼&#13;&#10;Untitled picture.png Machine generated alternative text:&#10;i Python3 &#10;• Autocomplete &#10;class Solution: &#10;def topKFrequent(se1f, &#10;counter &#10;nums: &#10;List[int], &#10;k: &#10;int) &#10;freq &#10;[ [ ] for i in range(len(nums) +1)] &#10;List[int]: &#10;# array where index &#10;# dict where key-num, &#10;count; &#10;val &#10;index 1 &#10;count of 1 &#10;for number in nums: &#10;counter[number] &#10;. get( number, &#10;counter &#10;8) &#10;count &#10;for num, count in counter. items(): &#10;freq[count] . append ( num) &#10;for i in range(len(freq &#10;for elem in freq[i]: &#10;res. append(elem) &#10;if len(res) &#10;k: &#10;return res &#13;&#10;Ink Drawings&#13;&#10;len(freq) -1 starts at last element.  -1 to avoid out of range error as 0-indexed array.&#13;&#10;&#13;&#10;0 means stop at 1 (as not inclusive), or count of 1 @ index 1&#13;&#10;Ink Drawings&#13;&#10;"><br>
+<img src="Top_K_Frequent_Elements_files/image006.png" width=1464 height=50
+alt="0 means stop at 1 (as not inclusive), or count of 1 @ index 1&#13;&#10;&#13;&#10;-1 means go backwards&#13;&#10;"><br>
+</nobr></div>
+
+<div style='direction:ltr;margin-top:.8527in;margin-left:0in;width:16.5527in'><img
+src="Top_K_Frequent_Elements_files/image007.png" width=1589 height=17></div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with OneNote.</p>
+
+</div>
+
+</body>
+
+</html>
