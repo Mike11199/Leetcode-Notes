@@ -1,3 +1,7 @@
 body {
   background-color: black;
 }
+
+span:first-child {
+  color: white;
+}
