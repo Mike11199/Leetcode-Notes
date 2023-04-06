@@ -2,6 +2,6 @@ body {
   background-color: black;
 }
 
-span:first-child {
+span:first-of-type {
   color: white;
 }
