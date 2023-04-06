@@ -2,7 +2,9 @@
 
 https://mike11199.github.io/Leetcode-Notes/
 
-Testing .htm exports from OneMore extension of personal notes taken in OneNote.
+- Testing .htm exports from OneMore extension of personal notes taken in OneNote.
+- Added background color to dark in CSS as use dark mode.
+- Have to find/replace all #201F1E to #FFFFFF manually on .htm pages as in dark mode automatic is white text, but renders as black text (invisible).
 
 e.g- Older section from 2022 on Top K Frequent Elements
 
