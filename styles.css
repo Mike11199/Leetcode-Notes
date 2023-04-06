@@ -2,6 +2,6 @@ body {
   background-color: black;
 }
 
-body span:first-of-type {
+#page_title_span {
   color: white;
 }
